@@ -29,9 +29,9 @@ namespace Hogwarts
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AllowedPersons book = new AllowedPersons();
-            List<Human> test = book.LoadJson();
-            MessageBox.Show(test[1].name);
+            //AllowedPersons book = new AllowedPersons();
+            //List<Human> test = book.LoadJson();
+            //MessageBox.Show(Convert.ToString(test[0].E_Type));
         }
     }
 }
