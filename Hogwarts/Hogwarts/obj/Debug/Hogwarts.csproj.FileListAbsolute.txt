@@ -2,9 +2,12 @@ E:\Daneshgah\Advanced Programming\2\Hogwarts Project\mini_project2_hogwarts-Mahd
 E:\Daneshgah\Advanced Programming\2\Hogwarts Project\mini_project2_hogwarts-Mahdi-Rahbar\Hogwarts\Hogwarts\bin\Debug\Hogwarts.exe
 E:\Daneshgah\Advanced Programming\2\Hogwarts Project\mini_project2_hogwarts-Mahdi-Rahbar\Hogwarts\Hogwarts\bin\Debug\Hogwarts.pdb
 E:\Daneshgah\Advanced Programming\2\Hogwarts Project\mini_project2_hogwarts-Mahdi-Rahbar\Hogwarts\Hogwarts\obj\Debug\Hogwarts.csprojAssemblyReference.cache
-E:\Daneshgah\Advanced Programming\2\Hogwarts Project\mini_project2_hogwarts-Mahdi-Rahbar\Hogwarts\Hogwarts\obj\Debug\Hogwarts.Form1.resources
 E:\Daneshgah\Advanced Programming\2\Hogwarts Project\mini_project2_hogwarts-Mahdi-Rahbar\Hogwarts\Hogwarts\obj\Debug\Hogwarts.Properties.Resources.resources
 E:\Daneshgah\Advanced Programming\2\Hogwarts Project\mini_project2_hogwarts-Mahdi-Rahbar\Hogwarts\Hogwarts\obj\Debug\Hogwarts.csproj.GenerateResource.cache
 E:\Daneshgah\Advanced Programming\2\Hogwarts Project\mini_project2_hogwarts-Mahdi-Rahbar\Hogwarts\Hogwarts\obj\Debug\Hogwarts.csproj.CoreCompileInputs.cache
 E:\Daneshgah\Advanced Programming\2\Hogwarts Project\mini_project2_hogwarts-Mahdi-Rahbar\Hogwarts\Hogwarts\obj\Debug\Hogwarts.exe
 E:\Daneshgah\Advanced Programming\2\Hogwarts Project\mini_project2_hogwarts-Mahdi-Rahbar\Hogwarts\Hogwarts\obj\Debug\Hogwarts.pdb
+E:\Daneshgah\Advanced Programming\2\Hogwarts Project\mini_project2_hogwarts-Mahdi-Rahbar\Hogwarts\Hogwarts\obj\Debug\Hogwarts.SelectingRole.resources
+E:\Daneshgah\Advanced Programming\2\Hogwarts Project\mini_project2_hogwarts-Mahdi-Rahbar\Hogwarts\Hogwarts\bin\Debug\Newtonsoft.Json.dll
+E:\Daneshgah\Advanced Programming\2\Hogwarts Project\mini_project2_hogwarts-Mahdi-Rahbar\Hogwarts\Hogwarts\bin\Debug\Newtonsoft.Json.xml
+E:\Daneshgah\Advanced Programming\2\Hogwarts Project\mini_project2_hogwarts-Mahdi-Rahbar\Hogwarts\Hogwarts\obj\Debug\Hogwarts.csproj.CopyComplete
