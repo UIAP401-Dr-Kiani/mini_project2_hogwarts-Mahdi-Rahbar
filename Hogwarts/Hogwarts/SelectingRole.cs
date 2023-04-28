@@ -20,18 +20,15 @@ namespace Hogwarts
         private void LoginPage_Load(object sender, EventArgs e)
         {
             SetFormSize();
+            Student student = new Student();
+            student.LoadJson();
+            student.SetStudentList();
+            MessageBox.Show(student.studentlist[0].Name);
         }
         private void SetFormSize()
         {
             this.Size = new Size(1280, 720);
             this.Location = new Point((Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2, (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2);
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //AllowedPersons book = new AllowedPersons();
-            //List<Human> test = book.LoadJson();
-            //MessageBox.Show(Convert.ToString(test[0].E_Type));
         }
     }
 }
