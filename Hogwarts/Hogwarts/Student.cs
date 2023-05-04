@@ -11,8 +11,8 @@ namespace Hogwarts
         public int Course { get; set; }
         public int Term { get; set; }
         public int DormNumber { get; set; }
-        public List<Student> studentlist = new List<Student>();
-        public void SetStudentList()
+        public static List<Student> studentlist = new List<Student>();
+        public static void SetStudentList()
         {
             foreach (Human item in humanslist)
             {

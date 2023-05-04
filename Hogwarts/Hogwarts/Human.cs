@@ -25,8 +25,8 @@ namespace Hogwarts
         public Race E_Type { get; set; }
         public string Type { get; set; }
         public string Role { get; set; }
-        public List<Human> humanslist = new List<Human>();
-        public void LoadJson()
+        public static List<Human> humanslist = new List<Human>();
+        public static void LoadJson()
         {
             using (StreamReader file = new StreamReader(@"E:\Daneshgah\Advanced Programming\2\Hogwarts Project\mini_project2_hogwarts-Mahdi-Rahbar\Files\JSON_DATA.json"))
             {

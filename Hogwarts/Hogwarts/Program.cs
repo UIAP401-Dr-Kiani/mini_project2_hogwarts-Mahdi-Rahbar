@@ -13,6 +13,7 @@ namespace Hogwarts
         [STAThread]
         static void Main()
         {
+            Human.LoadJson();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new SelectingRole());
