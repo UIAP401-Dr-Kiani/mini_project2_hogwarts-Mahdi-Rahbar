@@ -20,11 +20,60 @@ namespace Hogwarts
         private void LoginForm_Load(object sender, EventArgs e)
         {
             SetFormSize();
+            SetButtonAndTexboxLocation();
+            
+        }
+        private void CheckAdminInformation()
+        {
+            if (username.Equals("admin") && Password.Equals("admin"))
+            {
+                MessageBox.Show("fuck");
+            }
+            else
+                MessageBox.Show("not fuck");
+        }
+        private void SetButtonAndTexboxLocation()
+        {
+            username.Font = new Font("username", 12);
+            username.Location = new Point(150, 113);
+            L_username.Font = new Font("L_username", 12);
+            L_username.Location = new Point(168, 75);
+            Password.Font = new Font("Password", 18);
+            Password.Location = new Point(150, 200);
+            L_password.Font = new Font("L_Password", 12);
+            L_password.Location = new Point(174, 165);
+            login.Font = new Font("Login button", 12);
+            login.Location = new Point(160, 260);
         }
         private void SetFormSize()
         {
             this.Size = new Size(450, 400);
             this.Location = new Point((Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2, (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2);
+        }
+
+        private void username_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void login_MouseEnter(object sender, EventArgs e)
+        {
+            login.BackColor = Color.FromArgb(243, 171, 31);
+        }
+
+        private void login_MouseLeave(object sender, EventArgs e)
+        {
+            login.BackColor = Color.FromArgb(255, 192, 128);
+        }
+
+        private void login_Click(object sender, EventArgs e)
+        {
+            CheckAdminInformation();
         }
     }
 }
