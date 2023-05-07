@@ -40,8 +40,7 @@ namespace Hogwarts
         private void admin_Click(object sender, EventArgs e)
         {
             LoginForm login = new LoginForm();
-            login.Show();
-            this.Hide();
+            login.ShowDialog();
         }
         private void admin_MouseEnter(object sender, EventArgs e)
         {
