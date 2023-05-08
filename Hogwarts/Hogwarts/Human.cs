@@ -23,6 +23,7 @@ namespace Hogwarts
         public string Username { get; set; }
         public string Password { get; set; }
         public Race E_Type { get; set; }
+        public Roles E_Role { get; set; }
         public string Type { get; set; }
         public string Role { get; set; }
         public static List<Human> humanslist = new List<Human>();
@@ -40,6 +41,10 @@ namespace Hogwarts
                         item.E_Type = Race.Pureblood;
                     else if (item.Type == "Muggle blood")
                         item.E_Type = Race.Muggleblood;
+                    else if (item.Role == "teacher")
+                        item.E_Role = Roles.Teacher;
+                    else if (item.Role == "student")
+                        item.E_Role = Roles.Student;
                 }
             }
         }

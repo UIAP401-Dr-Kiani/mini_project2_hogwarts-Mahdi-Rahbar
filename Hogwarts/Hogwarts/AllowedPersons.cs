@@ -23,8 +23,6 @@ namespace Hogwarts
         public Animal Pet { get; set; }
         public Team Group { get; set; }
         public bool HaveSuitcase { get; set; }
-        public Roles E_Role { get; set; }
         public string[] Letter { get; set; }
-
     }
 }

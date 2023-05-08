@@ -25,12 +25,17 @@ namespace Hogwarts
         }
         private void CheckAdminInformation()
         {
-            if (username.Equals("admin") && Password.Equals("admin"))
+            
+            if (username.Text == "admin" && Password.Text == "admin")
             {
-                MessageBox.Show("fuck");
+
+            }
+            else if(username.Text == "" || Password.Text == "")
+            {
+                MessageBox.Show("Please fill in the empty field or fields.");
             }
             else
-                MessageBox.Show("not fuck");
+                MessageBox.Show("Not found!");
         }
         private void SetButtonAndTexboxLocation()
         {
