@@ -57,6 +57,12 @@
       <DependentUpon>AdminForm.cs</DependentUpon>
     </Compile>
     <Compile Include="AllowedPersons.cs" />
+    <Compile Include="ExpressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpressForm.Designer.cs">
+      <DependentUpon>ExpressForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Human.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -65,6 +71,12 @@
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Master.cs" />
+    <Compile Include="MasterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterForm.Designer.cs">
+      <DependentUpon>MasterForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SelectingRole.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,8 +90,14 @@
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ExpressForm.resx">
+      <DependentUpon>ExpressForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterForm.resx">
+      <DependentUpon>MasterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SelectingRole.resx">
       <DependentUpon>SelectingRole.cs</DependentUpon>

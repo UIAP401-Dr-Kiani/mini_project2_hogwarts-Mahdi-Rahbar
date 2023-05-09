@@ -71,6 +71,7 @@ namespace Hogwarts
             this.master.TabIndex = 2;
             this.master.Text = "Master";
             this.master.UseVisualStyleBackColor = false;
+            this.master.Click += new System.EventHandler(this.master_Click);
             this.master.MouseEnter += new System.EventHandler(this.master_MouseEnter);
             this.master.MouseLeave += new System.EventHandler(this.master_MouseLeave);
             // 
@@ -84,6 +85,7 @@ namespace Hogwarts
             this.student.TabIndex = 3;
             this.student.Text = "Student";
             this.student.UseVisualStyleBackColor = false;
+            this.student.Click += new System.EventHandler(this.student_Click);
             this.student.MouseEnter += new System.EventHandler(this.student_MouseEnter);
             this.student.MouseLeave += new System.EventHandler(this.student_MouseLeave);
             // 

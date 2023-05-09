@@ -1,7 +1,7 @@
 ﻿
 namespace Hogwarts
 {
-    partial class AdminForm
+    partial class ExpressForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,10 @@ namespace Hogwarts
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExpressForm));
             this.SuspendLayout();
             // 
-            // AdminForm
+            // ExpressForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -41,9 +41,8 @@ namespace Hogwarts
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "AdminForm";
-            this.Text = "AdminForm";
-            this.Load += new System.EventHandler(this.AdminForm_Load);
+            this.Name = "ExpressForm";
+            this.Text = "ExpressForm";
             this.ResumeLayout(false);
 
         }

@@ -6,8 +6,19 @@ using System.Threading.Tasks;
 
 namespace Hogwarts
 {
-    class Master:AllowedPersons
+    class Master : AllowedPersons
     {
+        public static List<Master> masterlist = new List<Master>();
         public bool SynchronicTeaching { get; set; }
+        public static void SetTeacherList()
+        {
+            foreach (Human item in humanslist)
+            {
+                if (item.Role == "teacher")
+                {
+                    masterlist.Add(new Master { Name = item.Name, Family = item.Family, Username = item.Username, Password = item.Password, E_Role = Roles.Teacher });
+                }
+            }
+        }
     }
 }

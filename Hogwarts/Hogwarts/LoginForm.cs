@@ -21,16 +21,19 @@ namespace Hogwarts
         {
             SetFormSize();
             SetButtonAndTexboxLocation();
-            
+
         }
         private void CheckAdminInformation()
         {
-            
-            if (username.Text == "admin" && Password.Text == "admin")
+            SelectingRole select_form = new SelectingRole();
+            AdminForm admin_form = new AdminForm();
+            if (username.Text == Admin.GetIns().Username && Password.Text == Admin.GetIns().Password)
             {
-
+                this.Hide();
+                admin_form.ShowDialog();
+                this.Close();
             }
-            else if(username.Text == "" || Password.Text == "")
+            else if (username.Text == "" || Password.Text == "")
             {
                 MessageBox.Show("Please fill in the empty field or fields.");
             }
@@ -78,7 +81,10 @@ namespace Hogwarts
 
         private void login_Click(object sender, EventArgs e)
         {
-            CheckAdminInformation();
+            if (SelectingRole.ButtonSelected == "admin")
+            {
+                CheckAdminInformation();
+            }
         }
     }
 }

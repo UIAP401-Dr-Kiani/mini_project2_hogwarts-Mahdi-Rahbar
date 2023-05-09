@@ -12,6 +12,7 @@ namespace Hogwarts
 {
     public partial class SelectingRole : Form
     {
+        public static string ButtonSelected { get; set; }
         public SelectingRole()
         {
             InitializeComponent();
@@ -40,6 +41,7 @@ namespace Hogwarts
         private void admin_Click(object sender, EventArgs e)
         {
             LoginForm login = new LoginForm();
+            ButtonSelected = "admin";
             login.ShowDialog();
         }
         private void admin_MouseEnter(object sender, EventArgs e)
@@ -67,6 +69,16 @@ namespace Hogwarts
         private void student_MouseLeave(object sender, EventArgs e)
         {
             student.BackColor = Color.FromArgb(14, 63, 78);
+        }
+
+        private void master_Click(object sender, EventArgs e)
+        {
+            ButtonSelected = "master";
+        }
+
+        private void student_Click(object sender, EventArgs e)
+        {
+            ButtonSelected = "student";
         }
     }
 }
