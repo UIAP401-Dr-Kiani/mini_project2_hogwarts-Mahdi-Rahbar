@@ -13,3 +13,5 @@ E:\Daneshgah\Advanced Programming\2\Hogwarts Project\mini_project2_hogwarts-Mahd
 E:\Daneshgah\Advanced Programming\2\Hogwarts Project\mini_project2_hogwarts-Mahdi-Rahbar\Hogwarts\Hogwarts\obj\Debug\Hogwarts.csproj.CopyComplete
 E:\Daneshgah\Advanced Programming\2\Hogwarts Project\mini_project2_hogwarts-Mahdi-Rahbar\Hogwarts\Hogwarts\obj\Debug\Hogwarts.LoginForm.resources
 E:\Daneshgah\Advanced Programming\2\Hogwarts Project\mini_project2_hogwarts-Mahdi-Rahbar\Hogwarts\Hogwarts\obj\Debug\Hogwarts.AdminForm.resources
+E:\Daneshgah\Advanced Programming\2\Hogwarts Project\mini_project2_hogwarts-Mahdi-Rahbar\Hogwarts\Hogwarts\obj\Debug\Hogwarts.ExpressForm.resources
+E:\Daneshgah\Advanced Programming\2\Hogwarts Project\mini_project2_hogwarts-Mahdi-Rahbar\Hogwarts\Hogwarts\obj\Debug\Hogwarts.MasterForm.resources

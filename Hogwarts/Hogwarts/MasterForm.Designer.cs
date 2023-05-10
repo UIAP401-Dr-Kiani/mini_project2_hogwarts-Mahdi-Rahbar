@@ -43,6 +43,7 @@ namespace Hogwarts
             this.MaximizeBox = false;
             this.Name = "MasterForm";
             this.Text = "MasterForm";
+            this.Load += new System.EventHandler(this.MasterForm_Load);
             this.ResumeLayout(false);
 
         }

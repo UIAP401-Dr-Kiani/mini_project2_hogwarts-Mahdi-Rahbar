@@ -73,12 +73,16 @@ namespace Hogwarts
 
         private void master_Click(object sender, EventArgs e)
         {
+            LoginForm login = new LoginForm();
             ButtonSelected = "master";
+            login.ShowDialog();
         }
 
         private void student_Click(object sender, EventArgs e)
         {
+            LoginForm login = new LoginForm();
             ButtonSelected = "student";
+            login.ShowDialog();
         }
     }
 }

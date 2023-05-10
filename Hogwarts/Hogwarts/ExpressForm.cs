@@ -16,5 +16,15 @@ namespace Hogwarts
         {
             InitializeComponent();
         }
+
+        private void ExpressForm_Load(object sender, EventArgs e)
+        {
+            SetFormSize();
+        }
+        private void SetFormSize()
+        {
+            this.Size = new Size(1280, 720);
+            this.Location = new Point((Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2, (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2);
+        }
     }
 }

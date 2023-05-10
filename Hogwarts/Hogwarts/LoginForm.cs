@@ -25,7 +25,6 @@ namespace Hogwarts
         }
         private void CheckAdminInformation()
         {
-            SelectingRole select_form = new SelectingRole();
             AdminForm admin_form = new AdminForm();
             if (username.Text == Admin.GetIns().Username && Password.Text == Admin.GetIns().Password)
             {
@@ -39,6 +38,54 @@ namespace Hogwarts
             }
             else
                 MessageBox.Show("Not found!");
+        }
+        private void CheckMasterInformation()
+        {
+            bool notfound_message = false;
+            MasterForm master_form = new MasterForm();
+            if (username.Text == "" || Password.Text == "")
+            {
+                MessageBox.Show("Please fill in the empty field or fields.");
+            }
+            foreach (Master item in Master.masterlist)
+            {
+                if (username.Text == item.Username && Password.Text == item.Password)
+                {
+                    this.Hide();
+                    master_form.ShowDialog();
+                    this.Close();
+                    notfound_message = true;
+                    break;
+                }
+            }
+            if (notfound_message == false && username.Text != "" && Password.Text != "")
+            {
+                MessageBox.Show("Not found!");
+            }
+        }
+        private void CheckStudentInformation()
+        {
+            bool notfound_message = false;
+            ExpressForm express_form = new ExpressForm();
+            if (username.Text == "" || Password.Text == "")
+            {
+                MessageBox.Show("Please fill in the empty field or fields.");
+            }
+            foreach (Student item in Student.studentlist)
+            {
+                if (username.Text == item.Username && Password.Text == item.Password)
+                {
+                    this.Hide();
+                    express_form.ShowDialog();
+                    this.Close();
+                    notfound_message = true;
+                    break;
+                }
+            }
+            if (notfound_message == false && username.Text != "" && Password.Text != "")
+            {
+                MessageBox.Show("Not found!");
+            }
         }
         private void SetButtonAndTexboxLocation()
         {
@@ -84,6 +131,14 @@ namespace Hogwarts
             if (SelectingRole.ButtonSelected == "admin")
             {
                 CheckAdminInformation();
+            }
+            else if (SelectingRole.ButtonSelected == "master")
+            {
+                CheckMasterInformation();
+            }
+            else if (SelectingRole.ButtonSelected == "student")
+            {
+                CheckStudentInformation();
             }
         }
     }

@@ -43,6 +43,7 @@ namespace Hogwarts
             this.MaximizeBox = false;
             this.Name = "ExpressForm";
             this.Text = "ExpressForm";
+            this.Load += new System.EventHandler(this.ExpressForm_Load);
             this.ResumeLayout(false);
 
         }
