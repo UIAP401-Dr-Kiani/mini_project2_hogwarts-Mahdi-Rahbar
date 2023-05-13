@@ -30,14 +30,31 @@ namespace Hogwarts
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminForm));
+            this.send_letter = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // send_letter
+            // 
+            this.send_letter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(63)))), ((int)(((byte)(78)))));
+            this.send_letter.ForeColor = System.Drawing.Color.White;
+            this.send_letter.Location = new System.Drawing.Point(928, 172);
+            this.send_letter.Name = "send_letter";
+            this.send_letter.Size = new System.Drawing.Size(145, 62);
+            this.send_letter.TabIndex = 0;
+            this.send_letter.Text = "Send Letter";
+            this.send_letter.UseVisualStyleBackColor = false;
+            this.send_letter.Click += new System.EventHandler(this.send_letter_Click);
+            this.send_letter.MouseEnter += new System.EventHandler(this.send_letter_MouseEnter);
+            this.send_letter.MouseLeave += new System.EventHandler(this.send_letter_MouseLeave);
             // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(63)))), ((int)(((byte)(78)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.send_letter);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -49,5 +66,7 @@ namespace Hogwarts
         }
 
         #endregion
+
+        private System.Windows.Forms.Button send_letter;
     }
 }

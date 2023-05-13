@@ -20,11 +20,29 @@ namespace Hogwarts
         private void AdminForm_Load(object sender, EventArgs e)
         {
             SetFormSize();
+            send_letter.Font = new Font("SendLetter", 12);
+            send_letter.Location = new Point(928, 172);
         }
         private void SetFormSize()
         {
             this.Size = new Size(1280, 720);
             this.Location = new Point((Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2, (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2);
+        }
+
+        private void send_letter_MouseEnter(object sender, EventArgs e)
+        {
+            send_letter.BackColor = Color.FromArgb(14, 10, 78);
+        }
+
+        private void send_letter_MouseLeave(object sender, EventArgs e)
+        {
+            send_letter.BackColor = Color.FromArgb(14, 63, 78);
+        }
+
+        private void send_letter_Click(object sender, EventArgs e)
+        {
+            AdminSendLetterForm send_letter_form = new AdminSendLetterForm();
+            send_letter_form.ShowDialog();
         }
     }
 }
