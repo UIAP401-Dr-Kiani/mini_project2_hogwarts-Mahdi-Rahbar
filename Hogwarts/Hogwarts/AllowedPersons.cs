@@ -23,6 +23,7 @@ namespace Hogwarts
         public Animal Pet { get; set; }
         public Team Group { get; set; }
         public bool HaveSuitcase { get; set; }
-        public string[] Letter { get; set; }
+        public string[] Letters = new string[100];
+        public int n_letters = 0;
     }
 }

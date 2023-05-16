@@ -12,6 +12,7 @@ namespace Hogwarts
 {
     public partial class AdminSendLetterForm : Form
     {
+        bool not_found = true;
         public AdminSendLetterForm()
         {
             InitializeComponent();
@@ -52,7 +53,31 @@ namespace Hogwarts
 
         private void send_Click(object sender, EventArgs e)
         {
-            Student.studentlist[0].Letter[2] = "play";
+            if (letter_text.Text == "")
+            {
+                MessageBox.Show("The Letter text field is empty!");
+            }
+            else
+            {
+                foreach (Student item in Student.studentlist)
+                {
+                    if (username.Text == item.Username)
+                    {
+
+                        item.Letters[item.n_letters] = letter_text.Text;
+                        item.n_letters += 1;
+                        MessageBox.Show("The Letter sent!");
+                        not_found = false;
+                        letter_text.Text = "";
+                        username.Text = "";
+                        break;
+                    }
+                }
+            }
+            if (not_found == true && letter_text.Text != "")
+            {
+                MessageBox.Show("Username not found!");
+            }
         }
     }
 }
