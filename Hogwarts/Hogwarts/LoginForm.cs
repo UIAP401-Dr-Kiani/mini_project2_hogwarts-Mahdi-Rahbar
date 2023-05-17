@@ -21,7 +21,6 @@ namespace Hogwarts
         {
             SetFormSize();
             SetButtonAndTexboxLocation();
-
         }
         private void CheckAdminInformation()
         {
@@ -75,6 +74,7 @@ namespace Hogwarts
             {
                 if (username.Text == item.Username && Password.Text == item.Password)
                 {
+                    AllowedPersons.Entered = username.Text;
                     this.Hide();
                     express_form.ShowDialog();
                     this.Close();

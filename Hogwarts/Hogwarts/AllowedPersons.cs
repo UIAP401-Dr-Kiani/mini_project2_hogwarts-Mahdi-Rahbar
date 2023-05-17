@@ -24,6 +24,8 @@ namespace Hogwarts
         public Team Group { get; set; }
         public bool HaveSuitcase { get; set; }
         public string[] Letters = new string[100];
+        public static string Entered;
+        public static int IStudent = 0;
         public int n_letters = 0;
     }
 }

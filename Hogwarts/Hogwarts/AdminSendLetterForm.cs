@@ -53,12 +53,29 @@ namespace Hogwarts
 
         private void send_Click(object sender, EventArgs e)
         {
+            SendLetter();
+        }
+        private void SendLetter()
+        {
             if (letter_text.Text == "")
             {
                 MessageBox.Show("The Letter text field is empty!");
             }
             else
             {
+                if (username.Text == "")
+                {
+                    foreach (Student item in Student.studentlist)
+                    {
+                        item.Letters[item.n_letters] = letter_text.Text;
+                        item.n_letters += 1;
+                    }
+                        MessageBox.Show("The Letter sent!");
+                        not_found = false;
+                        letter_text.Text = "";
+                        username.Text = "";
+                        return;
+                }
                 foreach (Student item in Student.studentlist)
                 {
                     if (username.Text == item.Username)

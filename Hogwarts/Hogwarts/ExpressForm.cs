@@ -19,9 +19,9 @@ namespace Hogwarts
 
         private void ExpressForm_Load(object sender, EventArgs e)
         {
-            
             SetFormSize();
             SetButtonsLocation();
+            GetStudentId();
         }
         private void SetFormSize()
         {
@@ -37,7 +37,21 @@ namespace Hogwarts
             take_ticket.Font = new Font("taketicket", 10);
             take_ticket.Location = new Point(113, 338);
         }
-
+        private void GetStudentId()
+        {
+            AllowedPersons.IStudent = 0;
+            foreach (Student item in Student.studentlist)
+            {
+                if (item.Username == AllowedPersons.Entered)
+                {
+                    break;
+                }
+                else
+                {
+                    AllowedPersons.IStudent += 1;
+                }
+            }
+        }
         private void gotohogwarts_MouseEnter(object sender, EventArgs e)
         {
             gotohogwarts.BackColor = Color.FromArgb(14, 10, 78);
@@ -70,10 +84,16 @@ namespace Hogwarts
 
         private void received_letters_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(Student.studentlist[0].Letters[0]);
-            DateTime fuck = DateTime.Now;
-            
-      
+            if (Student.studentlist[AllowedPersons.IStudent].Letters[0] == null)
+            {
+                MessageBox.Show("There is no Letter!");
+            }
+            else if (Student.studentlist[AllowedPersons.IStudent].Letters[0] != null)
+            {
+                Received_Letters_Student_Form received_form = new Received_Letters_Student_Form();
+                received_form.ShowDialog();
+               
+            }
         }
     }
 }
