@@ -45,6 +45,7 @@ namespace Hogwarts
             this.gotohogwarts.TabIndex = 0;
             this.gotohogwarts.Text = "Go To Hogwarts";
             this.gotohogwarts.UseVisualStyleBackColor = false;
+            this.gotohogwarts.Click += new System.EventHandler(this.gotohogwarts_Click);
             this.gotohogwarts.MouseEnter += new System.EventHandler(this.gotohogwarts_MouseEnter);
             this.gotohogwarts.MouseLeave += new System.EventHandler(this.gotohogwarts_MouseLeave);
             // 
@@ -72,6 +73,7 @@ namespace Hogwarts
             this.take_ticket.TabIndex = 2;
             this.take_ticket.Text = "Take Ticket";
             this.take_ticket.UseVisualStyleBackColor = false;
+            this.take_ticket.Click += new System.EventHandler(this.take_ticket_Click);
             this.take_ticket.MouseEnter += new System.EventHandler(this.take_ticket_MouseEnter);
             this.take_ticket.MouseLeave += new System.EventHandler(this.take_ticket_MouseLeave);
             // 

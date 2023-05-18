@@ -109,6 +109,7 @@ namespace Hogwarts
             this.BTN_next.TabIndex = 6;
             this.BTN_next.Text = "Next";
             this.BTN_next.UseVisualStyleBackColor = false;
+            this.BTN_next.Click += new System.EventHandler(this.BTN_next_Click);
             this.BTN_next.MouseEnter += new System.EventHandler(this.BTN_next_MouseEnter);
             this.BTN_next.MouseLeave += new System.EventHandler(this.BTN_next_MouseLeave);
             // 
@@ -121,6 +122,7 @@ namespace Hogwarts
             this.BTN_back.TabIndex = 7;
             this.BTN_back.Text = "Back";
             this.BTN_back.UseVisualStyleBackColor = false;
+            this.BTN_back.Click += new System.EventHandler(this.BTN_back_Click);
             this.BTN_back.MouseEnter += new System.EventHandler(this.BTN_back_MouseEnter);
             this.BTN_back.MouseLeave += new System.EventHandler(this.BTN_back_MouseLeave);
             // 

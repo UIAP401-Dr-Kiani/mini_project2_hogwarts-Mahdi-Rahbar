@@ -69,6 +69,8 @@ namespace Hogwarts
                     {
                         item.Letters[item.n_letters] = letter_text.Text;
                         item.n_letters += 1;
+                        item.Letter_Times[item.n_letter_times] = DateTime.Now;
+                        item.n_letter_times += 1;
                     }
                         MessageBox.Show("The Letter sent!");
                         not_found = false;
@@ -83,6 +85,8 @@ namespace Hogwarts
 
                         item.Letters[item.n_letters] = letter_text.Text;
                         item.n_letters += 1;
+                        item.Letter_Times[item.n_letter_times] = DateTime.Now;
+                        item.n_letter_times += 1;
                         MessageBox.Show("The Letter sent!");
                         not_found = false;
                         letter_text.Text = "";

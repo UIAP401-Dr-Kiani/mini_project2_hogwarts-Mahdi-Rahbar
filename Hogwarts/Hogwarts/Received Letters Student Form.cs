@@ -12,6 +12,7 @@ namespace Hogwarts
 {
     public partial class Received_Letters_Student_Form : Form
     {
+        int i = 0;
         public Received_Letters_Student_Form()
         {
             InitializeComponent();
@@ -19,8 +20,6 @@ namespace Hogwarts
 
         private void Received_Letters_Student_Form_Load(object sender, EventArgs e)
         {
-            DateTime fuck = DateTime.Now;
-            TBX_sender.Text = fuck.ToString("HH:mm:ss");
             SetLocationUI();
             SetFormSize();
             SetLetterFeatures();
@@ -51,7 +50,9 @@ namespace Hogwarts
         }
         private void SetLetterFeatures()
         {
-            TBX_letter_text.Text = Student.studentlist[AllowedPersons.IStudent].Letters[0];
+            TBX_sender.Text = "admin";
+            TBX_letter_text.Text = Student.studentlist[AllowedPersons.IStudent].Letters[i];
+            TBX_time.Text = Student.studentlist[AllowedPersons.IStudent].Letter_Times[i].ToString("HH:mm:ss");
         }
         private void BTN_next_MouseEnter(object sender, EventArgs e)
         {
@@ -71,6 +72,32 @@ namespace Hogwarts
         private void BTN_back_MouseLeave(object sender, EventArgs e)
         {
             BTN_back.BackColor = Color.FromArgb(255, 192, 128);
+        }
+
+        private void BTN_back_Click(object sender, EventArgs e)
+        {
+            if (i > 0)
+            {
+                i -= 1;
+                SetLetterFeatures();
+            }
+            else
+            {
+                MessageBox.Show("Letter not found!");
+            }
+        }
+
+        private void BTN_next_Click(object sender, EventArgs e)
+        {
+            if (Student.studentlist[AllowedPersons.IStudent].Letters[i + 1] != null)
+            {
+                i += 1;
+                SetLetterFeatures();
+            }
+            else
+            {
+                MessageBox.Show("Letter not found!");
+            }
         }
     }
 }

@@ -52,6 +52,20 @@ namespace Hogwarts
                 }
             }
         }
+        private void TakeTicket()
+        {
+            Student ticket = new Student();
+            DateTime ticket_time;
+            int cabin_number;
+            int seat_number;
+            Random random_cabin_number = new Random();
+            Random random_seat_number = new Random();
+            cabin_number = random_cabin_number.Next(1, 9);
+            seat_number = random_seat_number.Next(1, 5);
+            ticket_time = DateTime.Now.AddMinutes(1);
+            ticket.Ticket = "Cabin number: " + cabin_number.ToString() + "  Seat number: " + seat_number.ToString() + "  Departure time: " + ticket_time.ToString("HH:mm:ss");
+            MessageBox.Show(ticket.Ticket);
+        }
         private void gotohogwarts_MouseEnter(object sender, EventArgs e)
         {
             gotohogwarts.BackColor = Color.FromArgb(14, 10, 78);
@@ -92,7 +106,31 @@ namespace Hogwarts
             {
                 Received_Letters_Student_Form received_form = new Received_Letters_Student_Form();
                 received_form.ShowDialog();
-               
+
+            }
+        }
+
+        private void gotohogwarts_Click(object sender, EventArgs e)
+        {
+            if (Student.studentlist[AllowedPersons.IStudent].Letters[0] == null)
+            {
+                MessageBox.Show("You have not been invited to Hogwarts yet!");
+            }
+            else if (Student.studentlist[AllowedPersons.IStudent].Letters[0] != null)
+            {
+                MessageBox.Show("Please take a ticket!");
+            }
+        }
+
+        private void take_ticket_Click(object sender, EventArgs e)
+        {
+            if (Student.studentlist[AllowedPersons.IStudent].Letters[0] == null)
+            {
+                MessageBox.Show("You have not been invited to Hogwarts yet!");
+            }
+            else if (Student.studentlist[AllowedPersons.IStudent].Letters[0] != null)
+            {
+                TakeTicket();
             }
         }
     }
