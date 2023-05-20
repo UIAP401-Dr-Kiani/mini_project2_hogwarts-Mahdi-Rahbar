@@ -12,6 +12,9 @@ namespace Hogwarts
 {
     public partial class ExpressForm : Form
     {
+        DateTime ticket_time;
+        DateTime nowTime;
+        DateTime earlierTime;
         public ExpressForm()
         {
             InitializeComponent();
@@ -55,7 +58,6 @@ namespace Hogwarts
         private void TakeTicket()
         {
             Student ticket = new Student();
-            DateTime ticket_time;
             int cabin_number;
             int seat_number;
             Random random_cabin_number = new Random();
@@ -112,16 +114,24 @@ namespace Hogwarts
 
         private void gotohogwarts_Click(object sender, EventArgs e)
         {
+            nowTime = DateTime.Now;
             if (Student.studentlist[AllowedPersons.IStudent].Letters[0] == null)
             {
                 MessageBox.Show("You have not been invited to Hogwarts yet!");
             }
-            else if (Student.studentlist[AllowedPersons.IStudent].Letters[0] != null)
+            else if (Student.studentlist[AllowedPersons.IStudent].Letters[0] != null && (DateTime.Compare(nowTime, ticket_time)) > 0)
             {
                 MessageBox.Show("Please take a ticket!");
             }
+            else if (Student.studentlist[AllowedPersons.IStudent].Letters[0] != null && (DateTime.Compare(nowTime, earlierTime)) < 0)
+            {
+                MessageBox.Show("The Express has not arrived yet!");
+            }
+            else if (Student.studentlist[AllowedPersons.IStudent].Letters[0] != null && (DateTime.Compare(nowTime, earlierTime)) > 0 && (DateTime.Compare(nowTime, ticket_time)) < 0 )
+            {
+                MessageBox.Show("fuck you");
+            }
         }
-
         private void take_ticket_Click(object sender, EventArgs e)
         {
             if (Student.studentlist[AllowedPersons.IStudent].Letters[0] == null)
@@ -131,6 +141,7 @@ namespace Hogwarts
             else if (Student.studentlist[AllowedPersons.IStudent].Letters[0] != null)
             {
                 TakeTicket();
+                earlierTime = ticket_time.AddSeconds(-10);
             }
         }
     }
