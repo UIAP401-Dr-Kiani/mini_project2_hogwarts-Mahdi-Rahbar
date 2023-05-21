@@ -16,7 +16,7 @@ namespace Hogwarts
             {
                 if (item.Role == "teacher")
                 {
-                    masterlist.Add(new Master { Name = item.Name, Family = item.Family, Username = item.Username, Password = item.Password, E_Role = Roles.Teacher });
+                    masterlist.Add(new Master { Name = item.Name, Family = item.Family, Username = item.Username, Password = item.Password, E_Role = Roles.Teacher, Type = item.Type });
                 }
             }
         }

@@ -12,6 +12,7 @@ namespace Hogwarts
 {
     public partial class ExpressForm : Form
     {
+        StudentForm studentFrm = new StudentForm();
         DateTime ticket_time;
         DateTime nowTime;
         DateTime earlierTime;
@@ -129,7 +130,9 @@ namespace Hogwarts
             }
             else if (Student.studentlist[AllowedPersons.IStudent].Letters[0] != null && (DateTime.Compare(nowTime, earlierTime)) > 0 && (DateTime.Compare(nowTime, ticket_time)) < 0 )
             {
-                MessageBox.Show("fuck you");
+                this.Hide();
+                studentFrm.ShowDialog();
+                this.Close();
             }
         }
         private void take_ticket_Click(object sender, EventArgs e)

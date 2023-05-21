@@ -19,7 +19,7 @@ namespace Hogwarts
             {
                 if (item.Role == "student")
                 {
-                    studentlist.Add(new Student { Name = item.Name, Family = item.Family, Username = item.Username, Password = item.Password, E_Role = Roles.Student });
+                    studentlist.Add(new Student { Name = item.Name, Family = item.Family, Username = item.Username, Password = item.Password, E_Role = Roles.Student, Type = item.Type });
                 }
             }
         }
