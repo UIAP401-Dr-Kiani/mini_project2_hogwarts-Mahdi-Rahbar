@@ -18,8 +18,8 @@ namespace Hogwarts
     };
     class AllowedPersons : Human
     {
-        public String RoomNumber { get; set; }
-        public String SchoolTable { get; set; }
+        public int RoomNumber { get; set; }
+        public List<Lesson> tableschool = new List<Lesson>();
         public Animal Pet { get; set; }
         public Team Group { get; set; }
         public bool HaveSuitcase { get; set; }
