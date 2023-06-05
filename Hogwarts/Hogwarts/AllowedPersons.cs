@@ -19,7 +19,7 @@ namespace Hogwarts
     class AllowedPersons : Human
     {
         public int RoomNumber { get; set; }
-        public List<Lesson> tableschool = new List<Lesson>();
+        public static List<Lesson> tableschool = new List<Lesson>();
         public Animal Pet { get; set; }
         public Team Group { get; set; }
         public bool HaveSuitcase { get; set; }
@@ -27,6 +27,7 @@ namespace Hogwarts
         public DateTime[] Letter_Times = new DateTime[100];
         public static string Entered;
         public static int IStudent = 0;
+        public static int IMaster = 0;
         public int n_letters = 0;
         public int n_letter_times = 0;
     }

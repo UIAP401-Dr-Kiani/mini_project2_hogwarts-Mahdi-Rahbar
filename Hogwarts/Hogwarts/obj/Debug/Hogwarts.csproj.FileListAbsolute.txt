@@ -20,3 +20,4 @@ E:\Daneshgah\Advanced Programming\2\Hogwarts Project\mini_project2_hogwarts-Mahd
 E:\Daneshgah\Advanced Programming\2\Hogwarts Project\mini_project2_hogwarts-Mahdi-Rahbar\Hogwarts\Hogwarts\obj\Debug\Hogwarts.StudentForm.resources
 E:\Daneshgah\Advanced Programming\2\Hogwarts Project\mini_project2_hogwarts-Mahdi-Rahbar\Hogwarts\Hogwarts\obj\Debug\Hogwarts.TeacherListForm.resources
 E:\Daneshgah\Advanced Programming\2\Hogwarts Project\mini_project2_hogwarts-Mahdi-Rahbar\Hogwarts\Hogwarts\obj\Debug\Hogwarts.StudentListForm.resources
+E:\Daneshgah\Advanced Programming\2\Hogwarts Project\mini_project2_hogwarts-Mahdi-Rahbar\Hogwarts\Hogwarts\obj\Debug\Hogwarts.MasterSelectUnitForm.resources

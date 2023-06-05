@@ -9,6 +9,7 @@ namespace Hogwarts
     class Lesson
     {
         public string Time { get; set; }
+        public string Day { get; set; }
         public int NumberOfStudents { get; set; }
         public int Capacity { get; set; }
         public int PresentationTerm { get; set; }

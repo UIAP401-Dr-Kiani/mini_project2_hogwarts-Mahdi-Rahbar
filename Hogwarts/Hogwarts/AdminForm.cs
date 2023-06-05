@@ -20,6 +20,15 @@ namespace Hogwarts
         private void AdminForm_Load(object sender, EventArgs e)
         {
             SetFormSize();
+            SetButtonLocation();
+        }
+        private void SetFormSize()
+        {
+            this.Size = new Size(1280, 720);
+            this.Location = new Point((Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2, (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2);
+        }
+        private void SetButtonLocation()
+        {
             send_letter.Font = new Font("SendLetter", 12);
             send_letter.Location = new Point(928, 155);
             btn_teacherList.Font = new Font("btnTeacherlist", 12);
@@ -27,12 +36,6 @@ namespace Hogwarts
             btn_studentList.Font = new Font("btnStudentlist", 12);
             btn_studentList.Location = new Point(928, 285);
         }
-        private void SetFormSize()
-        {
-            this.Size = new Size(1280, 720);
-            this.Location = new Point((Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2, (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2);
-        }
-
         private void send_letter_MouseEnter(object sender, EventArgs e)
         {
             send_letter.BackColor = Color.FromArgb(14, 10, 78);

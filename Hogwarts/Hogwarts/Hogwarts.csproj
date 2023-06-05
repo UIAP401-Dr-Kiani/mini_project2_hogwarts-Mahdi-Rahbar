@@ -87,6 +87,12 @@
     <Compile Include="MasterForm.Designer.cs">
       <DependentUpon>MasterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MasterSelectUnitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterSelectUnitForm.Designer.cs">
+      <DependentUpon>MasterSelectUnitForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Received Letters Student Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MasterForm.resx">
       <DependentUpon>MasterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterSelectUnitForm.resx">
+      <DependentUpon>MasterSelectUnitForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Received Letters Student Form.resx">
       <DependentUpon>Received Letters Student Form.cs</DependentUpon>

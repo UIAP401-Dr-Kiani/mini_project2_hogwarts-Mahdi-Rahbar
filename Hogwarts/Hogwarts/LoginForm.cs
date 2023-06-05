@@ -50,6 +50,7 @@ namespace Hogwarts
             {
                 if (username.Text == item.Username && Password.Text == item.Password)
                 {
+                    AllowedPersons.Entered = username.Text;
                     this.Hide();
                     master_form.ShowDialog();
                     this.Close();
